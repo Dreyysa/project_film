@@ -6,24 +6,23 @@ const FilmCard = ({ item }) => {
   return (
     <Link
       href={{
-        pathname: "/film/[film]",
-        params: { film: item.name },
+        pathname: "/team/[team]",
+        params: { team: item.name },
       }}
     >
       <View>
         <Image
           source={{
             uri: item.logo,
-            height: 150,
-            width: 150,
+            height: 300,
+            width: 200,
           }}
         />
         <Text style={{ fontWeight: "bold" }}>
-          {item.name}+ {item.id}
+        {item.id} + {item.name}
         </Text>
       </View>
     </Link>
   );
 };
-
 export default FilmCard;

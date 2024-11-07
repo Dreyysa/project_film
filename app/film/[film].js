@@ -21,47 +21,27 @@ const DATA = [
   },
 ];
 
-const FilmDetail = () => {
-    const { film } = useLocalSearchParams();
+const TeamDetail = () => {
+    const { team } = useLocalSearchParams();
+    const selectedTeam = DATA.filter(function (item) {
+      return item.name === team;
+    });
   
-    // Find the team by matching the 'name' with 'film' parameter
-    const selectedFilm = DATA.find(item => item.name === film);
-  
-    const Item = ({ item }) => (
-      <View style={{ alignItems: "center" }}>
-        <Text style={{ fontWeight: "bold", fontSize: 20, marginBottom: 10 }}>
-          {item.name}
-        </Text>
-        <Image
-          source={{
-            uri: item.logo,
-          }}
-          style={{
-            height: 150,
-            width: 150,
-            resizeMode: "cover",
-            borderRadius: 10,
-          }}
-        />
-      </View>
-    );
+    console.log(selectedTeam);
   
     return (
       <SafeAreaView
         style={{
-          backgroundColor: "white",
+          backgroundColor: "grey",
           flex: 1,
+          // flexDirection: "row",
           justifyContent: "center",
           alignItems: "center",
         }}
       >
-        {selectedFilm ? (
-          <Item item={selectedFilm} />
-        ) : (
-          <Text>Film not found</Text>
-        )}
+        <FilmCard item={selectedTeam[0]} />
       </SafeAreaView>
     );
   };
   
-  export default FilmDetail;
+  export default TeamDetail;

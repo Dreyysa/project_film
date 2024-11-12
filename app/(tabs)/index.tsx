@@ -19,6 +19,11 @@ const DATA = [
     name: "Dune",
     logo: "https://upload.wikimedia.org/wikipedia/id/5/5e/DunePartPost2021.jpg",
   },
+  {
+    id: "4",
+    name: "Apocalypse Now",
+    logo: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p5545_p_v13_at.jpg",
+  },
 ];
 
 export default function HomeScreen() {
@@ -34,6 +39,7 @@ export default function HomeScreen() {
     >
       <FlatList
         data={DATA}
+        numColumns={2}
         renderItem={({ item }) => <FilmCard item={item} />}
         keyExtractor={(item) => item.id}
       />

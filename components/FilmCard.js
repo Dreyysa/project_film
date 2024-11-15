@@ -10,13 +10,13 @@ const FilmCard = ({ item }) => {
         params: { film: item.name },
       }}
     >
-      <View className="p-4 m-2 rounded-md bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ">
+      <View className="p-4 m-2 bg-blue-400 rounded-xl">
         <Image
-            className="rounded-x1"
+          className="rounded-xl"
           source={{
             uri: item.logo,
-            height: 300,
-            width: 200,
+            height: 150,
+            width: 150,
           }}
         />
         <Text className="text-center font-bold text-white font-mono text-sm">

@@ -29,6 +29,41 @@ const DATA = [
     logo: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p5545_p_v13_at.jpg",
     text: "orang gila perang",
   },
+  {
+    id: "5",
+    name: "Oldboy",
+    logo: "https://upload.wikimedia.org/wikipedia/en/6/67/Oldboykoreanposter.jpg",
+    text: "film keluarga",
+  },
+  {
+    id: "6",
+    name: "1917",
+    logo: "https://upload.wikimedia.org/wikipedia/id/a/ae/1917_film_poster.jpg",
+    text: "perang pt.1",
+  },
+  {
+    id: "7",
+    name: "2001: a space odyssey",
+    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/1/11/2001_A_Space_Odyssey_%281968%29.png/220px-2001_A_Space_Odyssey_%281968%29.png",
+    text: "luar angkasa",
+  },
+  {
+    id: "8",
+    name: "waterloo",
+    logo: "https://upload.wikimedia.org/wikipedia/en/e/e6/Waterloo_1970_poster.jpg",
+    text: "perang kakek-kakek",
+  },
+  {
+    id: "9",
+    name: "shin godzilla",
+    logo: "https://www.pifff.fr/2017/images/181/affiche.jpg",
+    text: "iguana raksasa lepas"
+  },
+  { 
+    id: "10",
+    name: "Parasite",
+    logo:"https://upload.wikimedia.org/wikipedia/en/5/53/Parasite_%282019_film%29.png"
+  },
 ];
 
 const FilmDetail = () => {
